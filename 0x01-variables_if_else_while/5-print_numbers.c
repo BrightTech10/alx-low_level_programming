@@ -13,6 +13,6 @@ while (x <= 9)
 printf("%i", x);
 x++;
 }
-printf('\n');
+printf("\n");
 return (0);
 }
