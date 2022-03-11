@@ -7,18 +7,18 @@
 */
 int main(void)
 {
-int x = 'a', y = 'A';;
+int x = 'a';
+int y = 'A';
 while (x <= 'z')
 {
 putchar(x);
 x++;
 }
-putchar('\n');
-
 while (y <= 'Z')
 {
 putchar(y);
 y++;
 }
+putchar('\n');
 return (0);
 }
