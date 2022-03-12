@@ -10,14 +10,12 @@ int main(void)
 int s = ' ';
 int c = ',';
 int x = '0';
-do
-{
+do{
 putchar(x);
 putchar(c);
 putchar(s);
 x++;
-}
-while (x <= '9');
+}while (x <= '9');
 putchar('\n');
 return (0);
 }
