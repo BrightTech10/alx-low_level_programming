@@ -7,15 +7,20 @@
 */
 int main(void)
 {
-int s = ' ';
-int c = ',';
+int a = ',';
+int b = ' ';
 int x = '0';
-do{
+while(x <= '9')
+{
 putchar(x);
-putchar(c);
-putchar(s);
+if (x == '9')
+{
+break;
+}
+putchar(a);
+putchar(b);
 x++;
-}while (x <= '9');
+}
 putchar('\n');
 return (0);
 }
