@@ -10,7 +10,7 @@ int main(void)
 int a = ',';
 int b = ' ';
 int x = '0';
-while(x <= '9')
+while (x <= '9')
 {
 putchar(x);
 if (x == '9')
