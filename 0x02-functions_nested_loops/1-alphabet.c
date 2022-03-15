@@ -8,7 +8,7 @@
 
 void print_alphabet(void);
 
-print_alphabet(void) /* Prints alphabets a -z in lowercase */
+void print_alphabet(void) /* Prints alphabets a -z in lowercase */
 {
 int x = 'a';
 while (x <= 'z')
