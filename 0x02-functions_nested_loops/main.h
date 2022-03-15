@@ -1,10 +1,10 @@
 /* main.h */
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef PRINT_ALPHABET_H
+#define PRINT_ALPHABET_H
 
 #include <stdio.h>
 
 /* Declare the print_alphabet function */
 void print_alphabet(void);
 
-#endif /* MAIN_H */
+#endif /* PRINT_ALPHABET_H */
