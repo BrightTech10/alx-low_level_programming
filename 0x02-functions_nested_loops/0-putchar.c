@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include "main.h"
+#include "main.h"
 /**
  * main - Entry point
  * Description: Program to print _putchar and move to next line
