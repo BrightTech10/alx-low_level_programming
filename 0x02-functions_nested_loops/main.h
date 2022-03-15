@@ -7,4 +7,4 @@
 /* Declare the print_alphabet function */
 void print_alphabet(void);
 
-#endif // MAIN_H
+#endif /* MAIN_H */
