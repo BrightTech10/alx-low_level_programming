@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * print a-z 10 times - prints alphabets a -z in lowercase
+ * void print_alphabet - prints alphabets a -z in lowercase
  * and ends with new line
  *
  * Description: This prints alphabets a-z in lowercase
