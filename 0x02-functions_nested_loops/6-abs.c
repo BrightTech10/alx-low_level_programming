@@ -12,7 +12,7 @@
 
 int _abs(int x)
 {
-int a = abs(x);
+int a = _abs(x);
 printf("%d\n", a);
 return(0);
 }
