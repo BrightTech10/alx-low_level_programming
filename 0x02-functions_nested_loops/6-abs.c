@@ -8,8 +8,7 @@
  * Return: Always 0 (Success)
 */
 
-int abs()
+int abs(int x)
 {
-int x;
-int abs(x);
+abs(x);
 }
