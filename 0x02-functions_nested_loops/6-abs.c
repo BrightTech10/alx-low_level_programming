@@ -13,8 +13,7 @@
 int _abs(int num)
 {
 int a;
-scanf("%d", &num);
-a = _abs(num);
+a = _abs(-1);
 printf("%d\n", a);
 return (0);
 }
