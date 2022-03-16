@@ -10,8 +10,9 @@
  * Return: Always 0 (Success)
 */
 
-int _abs(int x)
+int _abs(int)
 {
+int x;
 int a;
 a = _abs(x);
 printf("%i\n", a);
