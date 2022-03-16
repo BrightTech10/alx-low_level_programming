@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - print 10 times the alphabet, in lowercase
+ * and ends with new line
  *
- * Description: print 10 times the alphabet, in lowercase
+ * Description: This will print a-z 10 times
+ * main - Entry point
  * Return: Always 0 (Success)
 */
 
-/* Function to print a-z 10 times */
 void print_alphabet_x10(void)
 {
 int x = 0;
