@@ -4,6 +4,7 @@
  * main - Entry point
  * print a-z 10 times - prints alphabets a -z in lowercase
  * and ends with new line
+ *
  * Description: This prints alphabets a-z in lowercase
  * followed by a new line
  * Return: Always 0 (Success)
