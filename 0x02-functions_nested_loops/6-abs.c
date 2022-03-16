@@ -13,7 +13,6 @@
 int _abs(int num)
 {
 int a;
-printf("Enter an integer: ");
 scanf("%d", &num);
 a = _abs(num);
 printf("Absolute value is %i\n", a);
