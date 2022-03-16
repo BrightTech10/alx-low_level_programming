@@ -1,9 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- * print_alphabet - Prints alphabets a -z in lowercase followed by a new line
+ * main - Entry point
+ * Description: print_alphabet function prints alphabets a -z in lowercase
+ * followed by a new line
  * Return: Always 0 (Success)
 */
 
