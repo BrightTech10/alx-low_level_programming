@@ -14,6 +14,6 @@ int _abs(int x)
 {
 int a;
 a = _abs(x);
-printf("%d\n", a);
+printf("%i\n", a);
 return(0);
 }
