@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
  * void print_alphabet - prints alphabets a -z in lowercase
- * and ends with new line
+ * followed by a new line
  *
  * Description: This prints alphabets a-z in lowercase
- * followed by a new line
+ * main - Entry point
  * Return: Always 0 (Success)
 */
 
