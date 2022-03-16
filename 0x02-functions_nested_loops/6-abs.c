@@ -14,7 +14,7 @@ int _abs(int num)
 {
 int a;
 scanf("%d", &num);
-a = abs(num);
+a = _abs(num);
 printf("Absolute value is %i\n", a);
 return (0);
 }
