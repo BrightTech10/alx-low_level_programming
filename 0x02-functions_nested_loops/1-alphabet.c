@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void print_alphabet - prints alphabets a -z in lowercase
+ * print_alphabet - prints alphabets a -z in lowercase
  * followed by a new line
  *
  * Description: This prints alphabets a-z in lowercase
@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
 */
 
-void print_alphabet(void) /* Prints alphabets a -z in lowercase */
+void print_alphabet(void)
 {
 int x = 'a';
 while (x <= 'z')
