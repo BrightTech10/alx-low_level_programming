@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _islower(int c) - checks for lowercase characters
@@ -13,7 +14,7 @@ int _islower(int c)
 {
 int r;
 r = _islower(c);
-_putchar(r + '0');
-_putchar('\n');
+putchar(r + '0');
+putchar('\n');
 return(0);
 }
