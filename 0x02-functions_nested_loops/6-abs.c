@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
 */
 
-int _abs(int)
+int _abs(int num)
 {
 int a;
 int num;
