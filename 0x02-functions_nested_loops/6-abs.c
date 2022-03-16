@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
 */
 
-int abs(int x)
+int _abs(int x)
 {
 int a = abs(x);
 printf("%d\n", a);
