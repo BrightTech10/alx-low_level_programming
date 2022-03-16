@@ -7,6 +7,7 @@
  * Return: Always 0 (Success)
 */
 
+/* Function to print a-z 10 times */
 void print_alphabet_x10(void)
 {
 int x = 0;
