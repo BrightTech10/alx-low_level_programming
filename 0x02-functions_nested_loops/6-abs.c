@@ -12,7 +12,8 @@
 
 int _abs(int x)
 {
-int a = _abs(x);
-putchar(a);
+int a;
+a = _abs(x);
+printf("%d\n", a);
 return(0);
 }
