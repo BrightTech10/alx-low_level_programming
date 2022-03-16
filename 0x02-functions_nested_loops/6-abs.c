@@ -3,7 +3,7 @@
 #include <limits.h>
 
 /**
- * _abs(int x) - computes the absolute value of an integer
+ * _abs - computes the absolute value of an integer
  *
  * Description: This function computes the absolute value of an integer
  * main - Entry point
