@@ -13,7 +13,7 @@ int _islower(int c)
 {
 int r;
 r = _islower(c);
-putchar(r + '0');
-putchar('\n');
+_putchar(r + '0');
+_putchar('\n');
 return(0);
 }
