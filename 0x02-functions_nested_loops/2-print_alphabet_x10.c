@@ -15,10 +15,10 @@ while (x < 10)
 int y = 'a';
 while (y <= 'z')
 {
-_putchar(y);
+putchar(y);
 y++;
 }
 x++;
-_putchar('\n');
+putchar('\n');
 }
 }
