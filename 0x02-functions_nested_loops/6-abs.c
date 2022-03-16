@@ -10,5 +10,7 @@
 
 int abs(int x)
 {
-abs(x);
+int a = abs(x);
+printf("%d", a);
+return(0);
 }
