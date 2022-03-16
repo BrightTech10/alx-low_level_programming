@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <limits.h>
 
 /**
  * _abs(int) - computes the absolute value of an integer
@@ -8,9 +10,9 @@
  * Return: Always 0 (Success)
 */
 
-int _abs(int x)
+int _abs(int r)
 {
-int a = _abs(x);
+int r = _abs(x);
 printf("%d\n", a);
 return(0);
 }
