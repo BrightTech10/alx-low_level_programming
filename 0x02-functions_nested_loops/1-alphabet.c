@@ -3,7 +3,7 @@
 
 /**
  *main - check the code
- *Description: Prints alphabets a -z in lowercase followed by a new line
+ *print_alphabet: Prints alphabets a -z in lowercase followed by a new line
  *Return: Always 0 (Success)
 */
 
