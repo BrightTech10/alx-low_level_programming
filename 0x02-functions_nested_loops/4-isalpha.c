@@ -12,7 +12,7 @@
 
 int _isalpha(int c)
 {
-if(_isalpha(int c))
+if(_isalpha(c))
 {
 printf("1");
 }
