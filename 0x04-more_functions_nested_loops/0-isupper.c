@@ -4,7 +4,7 @@
 int _isupper(int c)
 {
 char c;
-if (isupper(c))
+if (_isupper(c))
 {
 printf("1");
 }else
