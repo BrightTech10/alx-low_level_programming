@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
 */
 
-int main(int c)
+int _abs(int c)
 {
 int r;
 r = _abs(c);
