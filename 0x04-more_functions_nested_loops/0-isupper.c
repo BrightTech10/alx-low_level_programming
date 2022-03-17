@@ -12,11 +12,11 @@
 int _isupper(int c)
 {
 char c;
-if (c >= 'A' && c <= 'Z')
+if (_isupper())
 {
 printf("1");
 }
-else if (c >= 'a' && c <= 'z')
+else
 {
 printf("0");
 }
