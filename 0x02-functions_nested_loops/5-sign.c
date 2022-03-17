@@ -27,4 +27,5 @@ if(n < 0)
 return (-1);
 printf("-");
 }
+return (0);
 }
