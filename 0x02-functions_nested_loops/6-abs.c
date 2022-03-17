@@ -8,14 +8,9 @@
  * Return: Always 0 (Success)
 */
 
-int _abs(int c)
+int main(int c)
 {
-if (c < 0)
-{
-int a = (-1) * c;
-printf("%d", a);
-}
-int b = abs(c);
-printf("%d", b);
-return (0);
+int r;
+r = _abs(c);
+return (r);
 }
