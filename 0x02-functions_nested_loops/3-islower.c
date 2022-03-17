@@ -11,8 +11,8 @@
 
 int main()
 {
-int c;
-if(islower(c))
+int c = 'H';
+if(_islower(c))
 {
 printf("1");
 }else
