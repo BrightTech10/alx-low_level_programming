@@ -9,9 +9,10 @@
  * Return: Always 0 (Success)
 */
 
-int _islower(int c)
+int main()
 {
-if(_islower(c))
+int c;
+if(islower(c))
 {
 printf("1");
 }else
