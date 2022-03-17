@@ -14,7 +14,7 @@ int _islower(int c);
 
 int main(void)
 {
-int c;
+int c = 'H';
 if(_islower(c))
 {
 printf("1");
