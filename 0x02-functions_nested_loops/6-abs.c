@@ -12,12 +12,10 @@ int _abs(int c)
 {
 if (c < 0)
 {
-int a;
-a = (-1) * c;
+int a = (-1) * c;
 printf("%d", a);
 }
-int b;
-b = abs(c);
+int b = abs(c);
 printf("%d", b);
 return (0);
 }
