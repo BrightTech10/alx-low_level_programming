@@ -12,7 +12,6 @@
 
 int _islower(int c);
 
-int main(void)
 {
 int c = 'H';
 if(_islower(c))
