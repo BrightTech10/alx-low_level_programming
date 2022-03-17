@@ -12,9 +12,14 @@
 
 int _islower(int c)
 {
-int r;
-r = _islower(c);
-putchar(r + '0');
-putchar('\n');
+
+if( _islower(c))
+{
+printf("1");
+}else
+{
+printf("0");
+}
+
 return(0);
 }
