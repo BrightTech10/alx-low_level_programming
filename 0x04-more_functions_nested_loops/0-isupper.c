@@ -11,5 +11,14 @@
 
 int _isupper(int c)
 {
-return (c >= 'A' && c <= 'Z');
+char c;
+if (c >= 'A' && c <= 'Z')
+{
+printf("1");
+}
+else if (c >= 'a' && c <= 'z')
+{
+printf("0");
+}
+return (0);
 }
