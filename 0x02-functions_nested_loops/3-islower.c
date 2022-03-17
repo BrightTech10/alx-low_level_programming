@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
 */
 
-int main()
+int _islower(int c)
 {
 int c = 'H';
 if(_islower(c))
