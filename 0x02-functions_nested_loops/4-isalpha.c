@@ -12,13 +12,5 @@
 
 int _isalpha(int c)
 {
-if(_isalpha(c))
-{
-printf("1");
-}
-else
-{
-printf("0");
-}
-return (0);
+return (isalpha(c));
 }
