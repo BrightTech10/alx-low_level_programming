@@ -11,16 +11,13 @@
 
 int _islower(int c)
 {
-int r;
-
-r = _islower(c);
-if(_islower(r))
+if(_islower(c))
 {
-printf("1");
+printf("1\n");
 }
 else
 {
-printf("0");
+printf("0\n");
 }
 return (0);
 }
