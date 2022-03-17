@@ -10,10 +10,7 @@
  * Return: Always 0 (Success)
 */
 
-int _abs(int num)
+int _abs(int c)
 {
-int a;
-a = _abs(num);
-printf("%d\n", a);
-return (0);
+return (c > 0);
 }
