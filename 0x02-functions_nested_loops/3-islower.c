@@ -14,12 +14,13 @@ int _islower(int c);
 
 int main(void)
 {
-int r;
-if(_islower(r))
+int c;
+if(_islower(c))
 {
 printf("1");
 }else
 {
 printf("0");
 }
+return 0;
 }
