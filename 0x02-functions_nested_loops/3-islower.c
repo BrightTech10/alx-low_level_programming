@@ -10,16 +10,16 @@
  * Return: Always 0 (Success)
 */
 
-int _islower(int c)
-{
+int _islower(int c);
 
-if( _islower(c))
+int main(void)
+{
+int r;
+if(_islower(r))
 {
 printf("1");
 }else
 {
 printf("0");
 }
-
-return(0);
 }
