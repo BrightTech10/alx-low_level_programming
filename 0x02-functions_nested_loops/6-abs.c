@@ -11,5 +11,5 @@
 int _abs(int c)
 {
 
-return (c > '0');
+return ((_abs(c)));
 }
