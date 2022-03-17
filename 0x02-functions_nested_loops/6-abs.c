@@ -12,5 +12,7 @@
 
 int _abs(int c)
 {
-return (c > 0);
+int r;
+r = _abs(c);
+return (r);
 }
