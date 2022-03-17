@@ -4,7 +4,7 @@
 int _isupper(int c)
 {
 char c;
-if (_isupper(c))
+if (c >= 'a' && c <= 'z')
 {
 printf("1");
 }else
