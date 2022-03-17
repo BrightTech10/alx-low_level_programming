@@ -11,5 +11,13 @@
 
 int _islower(int c)
 {
-return (c >= 'a' && c <= 'z');
+if (c >= 'a' && c <= 'z')
+{
+printf("1");
+}
+else
+{
+printf("0");
+}
+return (0);
 }
