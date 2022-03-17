@@ -10,7 +10,7 @@
  * Return: Always 0 (Success)
 */
 
-int _islower(int c);
+int _islower(int c)
 {
 int c = 'H';
 if(_islower(c))
