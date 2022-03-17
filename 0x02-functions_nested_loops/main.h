@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /*  */
-int _putchar(int c);
+int _putchar(char c);
 
 /* Declare the print_alphabet function */
 void print_alphabet(void);
