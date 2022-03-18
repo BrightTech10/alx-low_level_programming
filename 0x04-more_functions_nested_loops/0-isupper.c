@@ -12,5 +12,13 @@
 
 int _isupper(int c)
 {
-return (c >= '65' && c <= '90');
+if (c >= 'A' && c <= 'Z')
+{
+printf("1");
+}
+else
+{
+printf("0");
+}
+return (0);
 }
