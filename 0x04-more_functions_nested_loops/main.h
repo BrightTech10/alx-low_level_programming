@@ -36,4 +36,5 @@ void print_square(int size);
 
 /* Prints a triangle, followed by a new line */
 void print_triangle(int size);
-#endif // MAIN_H
+
+#endif /* MAIN_H */
