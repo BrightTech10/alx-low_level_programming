@@ -2,6 +2,8 @@
 #define MAIN_H
 
 #include <stdio.h>
+
+
 /* Checks for uppercase */
 int _isupper(int c);
 
