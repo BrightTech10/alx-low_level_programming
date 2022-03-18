@@ -1,4 +1,4 @@
-//#include "main.h"
+#include "main.h"
 
 /**
  * _isupper - checks for uppercase characters
@@ -20,5 +20,4 @@ else
 {
 return (0);
 }
-return (0);
 }
