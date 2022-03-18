@@ -10,9 +10,9 @@
  * Return: Always 0 (Success)
 */
 
-int isupper(int c)
+int _isupper(int c)
 {
-if (c >= 'A' && c <= 'Z')
+if (c >= 65 && c <= 90)
 {
 return (1);
 }
