@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+
 /* Function to print */
 int _putchar(char c);
 
