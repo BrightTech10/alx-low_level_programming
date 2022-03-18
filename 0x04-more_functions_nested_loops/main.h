@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+/* Function to print */
+int _putchar(char c);
 
 /* Checks for uppercase */
 int _isupper(int c);
