@@ -1,8 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
-
 /* Function to print */
 int _putchar(char c);
 
@@ -11,7 +9,6 @@ int _isupper(int c);
 
 /* Checks for digit 0-9 */
 int _isdigit(int c);
-
 
 /* Multiplies two integers */
 int mul(int a, int b)
