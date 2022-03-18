@@ -12,13 +12,5 @@
 
 int _isupper(int c)
 {
-if (c >= 65 && c <= 90)
-{
-printf("1");
-}
-else
-{
-printf("0");
-}
-return (0);
+return (c >= 65 && c <= 90);
 }
