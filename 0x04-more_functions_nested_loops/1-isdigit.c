@@ -12,5 +12,13 @@
 
 int _isdigit(int c)
 {
-return (c >= '0' && c <= '9');
+if (c >= 0 && c <= 9)
+{
+printf("1");
+}
+else
+{
+printf("0");
+}
+return (0);
 }
