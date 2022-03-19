@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlib.h>
+#include <stdio.h>
 
 /* Function to print */
 int _putchar(char c);
