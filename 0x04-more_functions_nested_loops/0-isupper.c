@@ -10,5 +10,5 @@
 
 int _isupper(int c)
 {
-return (c >= 'A' && c <= 'B');
+return (c >= '65' && c <= '90');
 }
