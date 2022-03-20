@@ -10,7 +10,7 @@
 
 int _abs(int c)
 {
-int r;
+char r;
 r = _abs(c);
 _putchar(r);
 return (0);
