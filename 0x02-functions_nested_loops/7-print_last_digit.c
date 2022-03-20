@@ -7,9 +7,8 @@
 */
 
 
-int print_last_digit(int)
+int print_last_digit(int c)
 {
-int c;
 print_last_digit(c);
 return (0);
 }
