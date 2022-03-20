@@ -10,8 +10,8 @@
 
 int _abs(int c)
 {
-char r;
+int r;
 r = _abs(c);
-_putchar(r);
+printf("%d", r);
 return (0);
 }
