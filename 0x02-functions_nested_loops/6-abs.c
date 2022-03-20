@@ -1,4 +1,4 @@
-#include "main.h"
+//#include "main.h"
 
 /**
  * _abs - computes the absolute value of an integer x
@@ -11,7 +11,6 @@
 int _abs(int c)
 {
 int r;
-r = _abs(c);
-printf("%d", r);
+r = abs(c);
 return (0);
 }
