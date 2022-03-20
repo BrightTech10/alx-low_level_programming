@@ -11,6 +11,6 @@
 int _abs(int c)
 {
 int r;
-r = abs(c);
+r = _abs(c);
 return (0);
 }
