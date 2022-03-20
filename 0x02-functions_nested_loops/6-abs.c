@@ -12,6 +12,6 @@ int _abs(int c)
 {
 int r;
 r = _abs(c);
-printf("%d\n", r)
+printf("%d\n", r);
 return (0);
 }
