@@ -9,9 +9,8 @@
  * Return: Always 0 (Success)
 */
 
-int int print_sign(int n)
+int print_sign(int n)
 {
-int n = 0;
 if (n > 0)
 {
 printf("+");
