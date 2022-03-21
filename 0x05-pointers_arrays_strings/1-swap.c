@@ -6,7 +6,7 @@
  * @*y: second integer value
 */
 
-swap_int(int *x, int *y)
+void swap_int(int *x, int *y)
 {
 int temp;
 temp = *x;
