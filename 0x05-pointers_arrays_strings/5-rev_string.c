@@ -9,9 +9,9 @@
  * @x: variable to be swapped with y
  * @y: variable to be swapped with x
 */
-void swap_int(int *x, int *y)
+void swap_int(char *x, char *y)
 {
-int temp = *x;
+char temp = *x;
 *x = *y;
 *y = temp;
 }
