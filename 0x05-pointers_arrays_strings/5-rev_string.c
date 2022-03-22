@@ -3,10 +3,9 @@
 
 /**
  * rev_string - function that reverses string
- * swap - swaps the values of variables
+ * swap(char *, char*) - swaps the values of variables
  * @a: pointer variable of type char
  * @x: variable to be swapped with y
- * @y: variable to be swapped with x
 */
 void swap(char *x, char *y)
 {
