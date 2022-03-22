@@ -2,8 +2,9 @@
 #include <string.h>
 
 /**
- * swap(char *x, char *y) - switches the values of variables
  * rev_string - function that reverses string
+ *
+ * swap - function that swaps the values of variables
  *
  * @x: variable to be swapped with y
  * @y: variable to be swapped with x
