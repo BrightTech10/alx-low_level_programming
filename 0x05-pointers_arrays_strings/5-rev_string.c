@@ -3,13 +3,15 @@
 
 /**
  * rev_string - function that reverses string
- * swap(char *, char*) - swaps the values of variables
  * @a: pointer variable of type char
+ *
+ * swap_int - swaps the values of variables
  * @x: variable to be swapped with y
+ * @y: variable to be swapped with x
 */
-void swap(char *x, char *y)
+void swap_int(int *x, int *y)
 {
-char temp = *x;
+int temp = *x;
 *x = *y;
 *y = temp;
 }
