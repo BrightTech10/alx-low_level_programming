@@ -5,11 +5,11 @@
  * rev_string - function that reverses string
  * @a: pointer variable of type char
  *
- * swap_int - swaps the values of variables
+ * swap - swaps the values of variables
  * @x: variable to be swapped with y
  * @y: variable to be swapped with x
 */
-void swap_int(char *x, char *y)
+void swap(char *x, char *y)
 {
 char temp = *x;
 *x = *y;
@@ -22,6 +22,6 @@ int len, i;
 len = strlen(a);
 for (i = 0; i < len / 2; i++)
 {
-swap_int(&a[i], &a[len - i - 1]);
+swap(&a[i], &a[len - i - 1]);
 }
 }
