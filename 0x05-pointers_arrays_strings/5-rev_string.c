@@ -22,6 +22,6 @@ int len, i;
 len = strlen(a);
 for (i = 0; i < len / 2; i++)
 {
-swap(&a[i], &a[len - i - 1]);
+swap_int(&a[i], &a[len - i - 1]);
 }
 }
