@@ -5,7 +5,7 @@
  * rev_string - function that reverses string
  * @a: pointer variable of type char
  *
- * swap - swaps the values of variables
+ * swap(char *x, char *y) - swaps the values of variables
  * @x: variable to be swapped with y
  * @y: variable to be swapped with x
 */
