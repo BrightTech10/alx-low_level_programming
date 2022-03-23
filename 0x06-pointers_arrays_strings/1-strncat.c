@@ -7,7 +7,6 @@
  * @dest: destination string
  * @src: source string; to be appended to the destination string
  * @n: n bytes from source string
- *
  * Return: returns pointer to destination string
 */
 
