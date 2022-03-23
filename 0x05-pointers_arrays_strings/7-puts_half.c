@@ -11,16 +11,23 @@ void puts_half(char *a)
 {
 int len, i, n;
 len = strlen(a);
+n = (len - 1)/2;
 
-for (i = 0; i < len / 2; i++)
+if((len%2) != 0)
+{
+n += 1;
+for (i = n; i < len; i++)
 {
 putchar(a[i]);
 }
+}
 
-n = (len - 1);
-if ((len%2) != 0)
+if((len%2) == 0)
 {
-putchar(a[n]);
+for (i = len / 2; i < len; i++)
+{
+putchar(a[i]);
+}
 }
 printf("\n");
 }
