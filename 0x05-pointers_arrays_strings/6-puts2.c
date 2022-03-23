@@ -15,6 +15,6 @@ len = strlen(a);
 for (i = 0; i < len; i += 2)
 {
 putchar(a[i]);
-printf("\n");
 }
+printf("\n");
 }
