@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * puts_half - function that prints half of string
+ *
+ * @a: pointer variable to a string
+*/
+
 void puts_half(char *a)
 {
 int len, i;
