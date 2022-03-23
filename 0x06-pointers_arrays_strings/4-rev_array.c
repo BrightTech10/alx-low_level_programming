@@ -18,7 +18,6 @@ for (i = 0; i < n / 2; i++)
 result = a[i];
 a[i] = a[n - i - 1];
 a[n - i - 1] = result;
-rev = result;
 }
-return (rev);
+
 }
