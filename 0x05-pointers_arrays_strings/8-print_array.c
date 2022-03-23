@@ -4,7 +4,7 @@
 /**
  * print_array - function that prints an array
  *
- * @*a: pointer variable to an array
+ * @a: pointer variable to an array
  * @n: number of elements of an array
 */
 
@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 {
 int i = 0;
 
-while(i < n)
+while (i < n)
 {
 printf("%d", a[i]);
 
