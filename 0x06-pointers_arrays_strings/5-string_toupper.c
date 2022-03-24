@@ -1,6 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 #include <string.h>
 
+/**
+ * string_toupper - converts lowercase string to uppercase
+ *
+ * @a: pointer to string variable
+ * Return: returns pointer to string
+*/
 
 char *string_toupper(char *a)
 {
@@ -15,15 +21,4 @@ a[i] = a[i] - 32;
 }
 }
 return (a);
-}
-
-int main(void)
-{
-char str[] = "Look up!\n";
-char *ptr;
-
-ptr = string_toupper(str);
-printf("%s", ptr);
-printf("%s", str);
-return (0);
 }
