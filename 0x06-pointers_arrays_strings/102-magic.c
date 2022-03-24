@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - print second element of array as 98
- *
- * Return: Always 0 (Success)
-*/
-
 int main(void)
 {
 int n;
