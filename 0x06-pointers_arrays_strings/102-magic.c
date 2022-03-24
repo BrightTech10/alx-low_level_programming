@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- * main - print second element in an array
- *
- * Return: Always 0 (Success)
-*/
-
 int main(void)
 {
   int n;
@@ -15,12 +9,12 @@ int main(void)
   a[2] = 1024;
   p = &n;
   /*
-   * write your line of code here...
+   * main - print second element in an array
    * Remember:
    * - you are not allowed to use a
    * - you are not allowed to modify p
    * - only one statement
-   * - you are not allowed to code anything else than this line of code
+   * Return: Always 0 (Success)
    */
   a[2] = 'b';
   /* ...so that this prints 98\n */
