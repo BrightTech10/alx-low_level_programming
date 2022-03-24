@@ -2,12 +2,12 @@
 
 int main(void)
 {
-  int n;
-  int a[5];
-  int *p;
+int n;
+int a[5];
+int *p;
 
-  a[2] = 1024;
-  p = &n;
+a[2] = 1024;
+p = &n;
   /*
    * main - print second element in an array
    * Remember:
@@ -16,8 +16,8 @@ int main(void)
    * - only one statement
    * Return: Always 0 (Success)
    */
-  a[2] = 'b';
+a[2] = 'b';
   /* ...so that this prints 98\n */
-  printf("a[2] = %d\n", a[2]);
-  return (0);
+printf("a[2] = %d\n", a[2]);
+return (0);
 }
