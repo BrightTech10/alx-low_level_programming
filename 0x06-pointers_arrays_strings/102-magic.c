@@ -1,4 +1,10 @@
-#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - print second element in an array
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
