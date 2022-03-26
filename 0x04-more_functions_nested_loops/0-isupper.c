@@ -10,5 +10,15 @@
 
 int _isupper(int c)
 {
-return (c >= 65 && c <= 90);
+
+if (c >= 97 && c <= 122)
+{
+return (0);
+}
+
+else
+{
+return (1);
+}
+
 }
