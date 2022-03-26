@@ -3,12 +3,11 @@
 /**
  * print_last_digit - print the last digit of a number
  * @c: integer parameter
- * Return: Always 0 (Success)
+ * Return: return last digit of integer
 */
 
 
 int print_last_digit(int c)
 {
-print_last_digit(c);
-return (c);
+return (c % 10);
 }
