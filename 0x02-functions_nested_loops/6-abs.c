@@ -2,16 +2,18 @@
 
 /**
  * _abs - computes the absolute value of an integer x
- * @c: parameter to test for different cases
+ * @c: integer
+ *
  * Description: This function computes the absolute value of an integer x
- * main - Entry point
- * Return: Always 0 (Success)
+ *
+ * Return: returns absolute value of c
 */
 
 int _abs(int c)
 {
-int r;
-r = _abs(c);
-printf("%d\n", r);
-return (0);
+if (c < 0)
+{
+c = c * -1;
+}
+return (c);
 }
