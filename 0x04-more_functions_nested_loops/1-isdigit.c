@@ -1,4 +1,4 @@
-#include "main.h"
+//#include "main.h"
 
 /**
  * _isdigit - checks for a digit
@@ -8,9 +8,9 @@
  * Return: Always 0 (Success)
 */
 
-int _isdigit(int c)
+int _isdigit(int a)
 {
-if (c >= 48 && c <= 57)
+if (a >= 48 && a <= 57)
 {
 return (1);
 }
