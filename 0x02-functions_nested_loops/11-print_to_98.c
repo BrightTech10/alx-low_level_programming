@@ -6,9 +6,10 @@
 */
 void print_to_98(int n)
 {
+int a, b;
 if (n < 98)
 {
-for (int a = n; a <= 98; a++)
+for (a = n; a <= 98; a++)
 {
 printf("%d", a);
 if (a == 98)
@@ -22,7 +23,7 @@ putchar(' ');
 }
 if (n > 98)
 {
-for (int b = n; b >= 98; b--)
+for (b = n; b >= 98; b--)
 {
 printf("%d", b);
 if (b == 98)
