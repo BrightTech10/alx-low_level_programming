@@ -12,7 +12,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 
-/**
+/*
  * First scan quickly through the two strings looking for a
  * single- character match. When it's found, then compare the
  * rest of the substring.
