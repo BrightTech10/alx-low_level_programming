@@ -12,11 +12,10 @@ int _strlen_recursion(char *s)
 {
 /* When string reaches the null character, it returns 0 */
 if (*s == '\0')
-    return (0);
+return (0);
 
-/* Keep adding 1 until string reaches null character
- * returns total value
- */
+/* Keep adding 1 until string reaches null character */
+/* returns total value */
 else
-    return (1 + _strlen_recursion(s + 1));
+return (1 + _strlen_recursion(s + 1));
 }
