@@ -36,5 +36,5 @@ else if (n < 1)
 return (-1);
 
 else
-return getRoot(n, 2);
+return (getRoot(n, 2));
 }
