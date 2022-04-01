@@ -6,7 +6,8 @@
  * main - function to print name of program
  * @argc: argument count
  * @argv: argument vector
- * Return: returns 0 (Success)
+ *
+ * Return: returns 1 if program does not receive two argument; 0 is successful
 */
 
 int main(int argc, char *argv[])
