@@ -24,8 +24,7 @@ int mul;
 mul = 1;
 for (i = 1; i < argc; i++)
 {
-int x = strtol(argv[i], NULL, 10);
-mul = mul * x;
+mul = mul * strtol(argv[i], NULL, 10);
 }
 printf("%d\n", mul);
 }
