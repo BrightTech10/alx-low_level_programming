@@ -17,14 +17,20 @@ printf("Error\n");
 return (1);
 }
 
-if (argc > 1)
+if (argc > 3)
+{
+printf("Error\n");
+return (1);
+}
+
+if (argc > 1 && argc < 4)
 {
 int i;
-
+int mul;
 mul = 1;
 for (i = 1; i < argc; i++)
 {
-int mul = mul * strtol(argv[i], NULL, 10);
+mul = mul * strtol(argv[i], NULL, 10);
 }
 printf("%d\n", mul);
 }
