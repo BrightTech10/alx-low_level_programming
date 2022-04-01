@@ -20,11 +20,11 @@ return (1);
 if (argc > 1)
 {
 int i;
-int mul;
+
 mul = 1;
 for (i = 1; i < argc; i++)
 {
-mul = mul * strtol(argv[i], NULL, 10);
+int mul = mul * strtol(argv[i], NULL, 10);
 }
 printf("%d\n", mul);
 }
