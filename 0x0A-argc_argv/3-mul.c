@@ -17,11 +17,11 @@ printf("Error\n");
 return (1);
 }
 
-int result;
+int result, a, b;
 if (argc > 1)
 {
-int a = strtol(argv[1], NULL, 10);
-int b = strtol(argv[2], NULL, 10);
+a = strtol(argv[1], NULL, 10);
+b = strtol(argv[2], NULL, 10);
 result = a * b;
 }
 printf("%d\n", result);
