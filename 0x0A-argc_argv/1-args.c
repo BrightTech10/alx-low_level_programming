@@ -4,7 +4,6 @@
 /**
  * main - function to print number of arguments in a program
  * @argc: argument count
- * @argv: argument vector
  * Return: returns 0 (Success)
 */
 
