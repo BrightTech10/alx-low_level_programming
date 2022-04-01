@@ -17,14 +17,19 @@ printf("Error\n");
 return (1);
 }
 
-int result, a, b;
 if (argc > 1)
 {
-a = strtol(argv[1], NULL, 10);
-b = strtol(argv[2], NULL, 10);
-result = a * b;
+int i;
+int mul;
+mul = 1;
+for (i = 1; i < argc; i++)
+{
+int x = strtol(argv[i], NULL, 10);
+mul = mul * x;
 }
-printf("%d\n", result);
+printf("%d\n", mul);
+}
 
 return (0);
 }
+
