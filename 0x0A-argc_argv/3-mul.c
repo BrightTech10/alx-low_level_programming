@@ -8,7 +8,7 @@
  * @argv: argument vector
  *
  * Return: returns 1 if program does not receive two argument; 0 is successful
-*/
+ */
 
 int main(int argc, char *argv[])
 {
@@ -18,13 +18,7 @@ printf("Error\n");
 return (1);
 }
 
-if (argc > 3)
-{
-printf("Error\n");
-return (1);
-}
-
-if (argc > 1 && argc < 4)
+if (argc > 1)
 {
 int i;
 int mul;
