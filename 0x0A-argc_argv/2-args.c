@@ -5,7 +5,7 @@
 /**
  * main - function to print all arguments received
  * @argc: argument count
- * @argv: argument vector
+ * @argv[]: argument vector
  * Return: returns 0 (Success)
 */
 
@@ -17,4 +17,6 @@ for (i = 1; i < argc; i++)
 {
 printf("%s\n", argv[i]);
 }
+
+return (0);
 }
