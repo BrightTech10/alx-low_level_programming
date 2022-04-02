@@ -3,32 +3,30 @@
 #include <string.h>
 
 /**
- * main - function to print name of program
+ * main - function to multiply two numbers
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: returns 1 if program does not receive two argument; 0 is successful
+ * Return: returns 0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
-if (argc == 1)
+if (argc < 3) /* If program receives less than two or no argument, print error */
 {
 printf("Error\n");
 return (1);
 }
 
-if (argc > 1)
-{
-int i;
-int mul;
+int i; /* Declare a int variable to count */
+int mul; /* Declare a int variable to store the result of multiplication */
 mul = 1;
 for (i = 1; i < argc; i++)
 {
-mul = mul *strtol(argv[i], NULL, 10);
+mul = mul *strtol(argv[i], NULL, 10); /* result of multiplying the arguments passed */
 }
 printf("%d\n", mul);
-}
+
 
 return (0);
 }
