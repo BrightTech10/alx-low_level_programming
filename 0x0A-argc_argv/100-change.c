@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 /**
  * main - function to print minimum number of coins
  * @argc: argument count
  * @argv: argument vector
  * Return: returns 0 (Success)
  */
+
 int main(int argc, char *argv[])
 {
 if (argc != 2)
