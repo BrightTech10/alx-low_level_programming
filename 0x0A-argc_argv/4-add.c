@@ -12,8 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-if (argc == 1) /* If number of arguments is only 1 */
-{              /* Print and return 0is argv  */
+if (argc == 1)
+{
 printf("0\n");
 return (0);
 }
@@ -26,8 +26,9 @@ for (i = 1; i < argc; i++)
 /* starting with column on the 1st index and iterating */
 for (j = 0; argv[i][j] != '\0'; j++)
 {
-if (!isdigit(argv[i][j])) /* print 0 if a non-digit is found, return 1 */
+if (!isdigit(argv[i][j])) /* checks characters if digit or not */
 {
+/* print Error if a non-digit is found, return 1 */
 printf("Error\n");
 return (1);
 }
