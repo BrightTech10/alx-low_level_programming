@@ -20,9 +20,11 @@ return (0);
 
 int i, j, sum;
 sum = 0;
-for (i = 1; i < argc; i++) /* starting with the argument on 1st index and iterating */
+/* starting with the argument on 1st index and iterating */
+for (i = 1; i < argc; i++)
 {
-for (j = 0; argv[i][j] != '\0'; j++) /* starting with column on the 1st index and iterating */
+/* starting with column on the 1st index and iterating */
+for (j = 0; argv[i][j] != '\0'; j++)
 {
 if (!isdigit(argv[i][j])) /* print 0 if a non-digit is found, return 1 */
 {
