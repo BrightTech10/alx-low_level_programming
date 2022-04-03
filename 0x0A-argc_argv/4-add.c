@@ -31,10 +31,9 @@ if (!isdigit(argv[i][j])) /* print 0 if a non-digit is found, return 1 */
 printf("Error\n");
 return (1);
 }
+}
 sum += atoi(argv[i]); /* Add digits if no non-digit is found */
 }
-}
 printf("%d\n", sum);
-
 return (0);
 }
