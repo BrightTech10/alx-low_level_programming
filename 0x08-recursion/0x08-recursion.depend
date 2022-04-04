@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1648744547 source:c:\users\bright\alx-low_level_programming\0x08-recursion\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1648741861 source:c:\users\bright\alx-low_level_programming\0x08-recursion\0-puts_recursion.c
+	"main.h"
+	<string.h>
+	<stdio.h>
+
+1648648950 c:\users\bright\alx-low_level_programming\0x08-recursion\main.h
+
+1648654722 source:c:\users\bright\alx-low_level_programming\0x08-recursion\3-factorial.c
+	"main.h"
+
+1648656554 source:c:\users\bright\alx-low_level_programming\0x08-recursion\4-pow_recursion.c
+	"main.h"
+
+1648736458 source:c:\users\bright\alx-low_level_programming\0x08-recursion\5-sqrt_recursion.c
+	"main.h"
+
+1648733341 source:c:\users\bright\alx-low_level_programming\0x08-recursion\2-strlen_recursion.c
+	"main.h"
+
+1648741331 source:c:\users\bright\alx-low_level_programming\0x08-recursion\6-is_prime_number.c
+	"main.h"
+
+1648745696 source:c:\users\bright\alx-low_level_programming\0x08-recursion\1-print_rev_recursion.c
+	"main.h"
+	<string.h>
+

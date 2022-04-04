@@ -1,5 +1,5 @@
 #include <string.h>
-#include "main.h"
+#include <stdio.h>
 
 /**
  * leet - encodes string into 1337
@@ -44,4 +44,15 @@ a[i] = 49;
 }
 
 return (a);
+}
+
+int main(void)
+{
+    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+    char *p;
+
+    p = leet(s);
+    printf("%s", p);
+    printf("%s", s);
+    return (0);
 }

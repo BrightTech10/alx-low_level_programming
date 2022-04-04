@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-char c[9] = "_putchar";
+char c[9] = "_putchar"; //define char variable c.
 int i;
 for (i = 0; i <= 7; i++)
 {

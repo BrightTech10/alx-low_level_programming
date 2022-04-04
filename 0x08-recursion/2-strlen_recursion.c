@@ -15,7 +15,7 @@ if (*s == '\0')
 return (0);
 
 /* Keep adding 1 until string reaches null character */
-/* returns total value */
+/* and then return total value */
 else
 return (1 + _strlen_recursion(s + 1));
 }

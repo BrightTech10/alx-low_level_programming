@@ -7,3 +7,5 @@ TASK 0: A function (char * _memset(char *s, char b, unsigned int n));
 TASK 1: A function char *_memcpy(char *dest, char *src, unsigned int n)
         is created to copy n bytes from the memory area src (source) to the memory area dest (destination).
         It is to return a pointer to dest.
+
+TASK 2:
