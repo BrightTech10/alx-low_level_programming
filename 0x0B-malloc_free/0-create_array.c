@@ -5,7 +5,7 @@
  * create_array - creates an array; initialize to specific character
  * @size: size of array
  * @c: specific character
- * Return: returns NULL if size = 0,
+ * Return: returns NULL if size = 0 or pointer fails
  * else returns pointer to allocated memory (str)
  */
 
@@ -16,8 +16,9 @@ char *str; /* Declare pointer to allocated memory */
 
 /* Allocate memory and store address in pointer */
 str = malloc(sizeof(char) * size);
-/* If program fails, return NULL*/
-/* This is to avoid segfault */
+
+/* If pointer fails, return NULL*/
+/* This is to avoid segmentation fault */
 if (!str)
 {
 printf("Error! Could not allocate space for array\n");
@@ -29,10 +30,10 @@ for (count = 0; count < size; count++)
 {
 str[count] = c;
 }
-
 /* If size of array is 0, return NULL */
 if (size == 0)
 return (NULL);
 
+/* returns pointer to allocated memory of the array */
 return (str);
 }
