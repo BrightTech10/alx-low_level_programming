@@ -5,7 +5,8 @@
  * create_array - creates an array; initialize to specific character
  * @size: size of array
  * @c: specific character
- * Return: returns NULL if size = 0, else returns pointer to allocated memory (str)
+ * Return: returns NULL if size = 0,
+ * else returns pointer to allocated memory (str)
  */
 
 char *create_array(unsigned int size, char c)
@@ -24,7 +25,10 @@ str[count] = c;
 
 /* If size of array is 0, return NULL */
 if (size == 0)
-return (0);
+return NULL;
+
+if (str == NULL)
+return NULL;
 
 /* Else return pointer to allocated memory */
 else
