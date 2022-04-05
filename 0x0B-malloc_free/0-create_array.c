@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * create_array - creates an array; initialize to specific character
  * @size: size of array
@@ -33,6 +34,5 @@ if (!str)
 printf("Error! Could not allocate space for array\n");
 return (NULL);
 }
-
 return (str);
 }
