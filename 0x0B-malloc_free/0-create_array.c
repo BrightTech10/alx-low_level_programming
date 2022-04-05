@@ -25,12 +25,7 @@ str[count] = c;
 
 /* If size of array is 0, return NULL */
 if (size == 0)
-return NULL;
+return (NULL);
 
-if (str == NULL)
-return NULL;
-
-/* Else return pointer to allocated memory */
-else
 return (str);
 }
