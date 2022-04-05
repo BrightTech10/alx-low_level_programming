@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * create_array - creates an array; initialize to specific character
  * @size: size of array
@@ -27,8 +26,11 @@ str[count] = c;
 if (size == 0)
 return (NULL);
 
-if (str == NULL)
+/* If program fails, return NULL*/
+/* This is to avoid segfault */
+if (!str)
 {
+printf("Error! Could not allocate space for array\n");
 return (NULL);
 }
 
