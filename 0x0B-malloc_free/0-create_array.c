@@ -27,5 +27,10 @@ str[count] = c;
 if (size == 0)
 return (NULL);
 
+if (str == NULL)
+{
+return (NULL);
+}
+
 return (str);
 }
