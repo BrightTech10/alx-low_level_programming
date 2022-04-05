@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * create_array - creates an array; initialize to specific character
@@ -9,23 +10,23 @@
 
 char *create_array(unsigned int size, char c)
 {
-  int count; /* Declare variable for loop count */
-  char *str; /* Declare pointer to allocated memory */
+unsigned int count; /* Declare variable for loop count */
+char *str; /* Declare pointer to allocated memory */
 
-  /* Allocate memory and store address in pointer */
-  str = malloc(sizeof(char) * size);
+/* Allocate memory and store address in pointer */
+str = malloc(sizeof(char) * size);
 
-  /* For loop to initialize all elements of the array with char c */
-  for (count = 0; count < size; count++)
-  {
-     str[count] = c;
-  }
+/* For loop to initialize all elements of the array with char c */
+for (count = 0; count < size; count++)
+{
+str[count] = c;
+}
 
-  /* If size of array is 0, return NULL */
-  if (size == 0)
-    return (0);
+/* If size of array is 0, return NULL */
+if (size == 0)
+return (0);
 
-  /* Else return pointer to allocated memory */
-  else
-    return (str);
+/* Else return pointer to allocated memory */
+else
+return (str);
 }
