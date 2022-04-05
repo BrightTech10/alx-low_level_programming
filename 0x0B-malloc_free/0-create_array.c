@@ -16,6 +16,13 @@ char *str; /* Declare pointer to allocated memory */
 
 /* Allocate memory and store address in pointer */
 str = malloc(sizeof(char) * size);
+/* If program fails, return NULL*/
+/* This is to avoid segfault */
+if (!str)
+{
+printf("Error! Could not allocate space for array\n");
+return (NULL);
+}
 
 /* For loop to initialize all elements of the array with char c */
 for (count = 0; count < size; count++)
@@ -27,12 +34,5 @@ str[count] = c;
 if (size == 0)
 return (NULL);
 
-/* If program fails, return NULL*/
-/* This is to avoid segfault */
-if (!str)
-{
-printf("Error! Could not allocate space for array\n");
-return (NULL);
-}
 return (str);
 }
