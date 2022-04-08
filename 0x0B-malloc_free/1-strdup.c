@@ -16,9 +16,6 @@ int len = strlen(str);
 /* Allocate memory and store address in pointer */
 char *ptr = malloc(sizeof(char) * len + 1);
 
-if (str == NULL)
-return (NULL); 
-
 /* If pointer fails, return NULL*/
 /* This is to avoid segmentation fault */
 if (!ptr)
@@ -27,8 +24,10 @@ printf("Error! Could not allocate space for array\n");
 return (NULL);
 }
 
-strcpy(ptr, str); /* Duplicate string str */
+if (str == NULL)
+return (NULL);
 
+strcpy(ptr, str); /* Duplicate string str */
 
 return (ptr);
 }
