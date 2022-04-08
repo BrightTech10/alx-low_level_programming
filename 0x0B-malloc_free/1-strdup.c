@@ -24,10 +24,10 @@ printf("Error! Could not allocate space for array\n");
 return (NULL);
 }
 
+strcpy(ptr, str); /* Duplicate string str */
+
 if (str == NULL)
 return (NULL);
-
-strcpy(ptr, str); /* Duplicate string str */
 
 return (ptr);
 }
