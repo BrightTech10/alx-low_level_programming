@@ -15,14 +15,11 @@ char *_strdup(char *str)
 
 if (str == NULL)
 return (NULL); 
-
-int len;
-len = strlen(str); /* Declare int variable for length of string */
-
-char *ptr;
+/* Declare int variable for length of string */
+int len = strlen(str);
 
 /* Allocate memory and store address in pointer */
-ptr = malloc(sizeof(char) * len + 1);
+char *ptr = malloc(sizeof(char) * len + 1);
 
 /* If pointer fails, return NULL*/
 /* This is to avoid segmentation fault */
