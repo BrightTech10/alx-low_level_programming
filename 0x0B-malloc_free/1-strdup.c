@@ -15,8 +15,8 @@ char *_strdup(char *str)
 
 if (str == NULL)
 return (NULL); 
-/* Declare int variable for length of string */
-int len = strlen(str);
+
+int len = strlen(str); /* Declare int variable for length of string */
 
 /* Allocate memory and store address in pointer */
 char *ptr = malloc(sizeof(char) * len + 1);
