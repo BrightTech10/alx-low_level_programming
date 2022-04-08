@@ -12,11 +12,10 @@
 
 char *_strdup(char *str)
 {
+int len = strlen(str);
 
 if (str == NULL)
 return (NULL); 
-
-int len = strlen(str);
 
 /* Allocate memory and store address in pointer */
 char *ptr = malloc(sizeof(char) * len + 1);
