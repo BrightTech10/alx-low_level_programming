@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
 /**
  * _strdup - function to return pointer to newly allocated memory
  * which contains a copy of the string given as a parameter
@@ -13,9 +12,21 @@
 
 char *_strdup(char *str)
 {
-char *ptr;
-ptr = malloc(sizeof(str));
-strcpy(ptr, str);
+int len; /* Declare int variable for length of string */
+len = strlen(str);
+char *ptr; /* Declare pointer variable */
+
+ptr = malloc(sizeof(char) * len); /* Allocate new memory */
+
+/* If pointer fails, return NULL*/
+/* This is to avoid segmentation fault */
+if (!str)
+{
+printf("Error! Could not allocate space for array\n");
+return (NULL);
+}
+
+strcpy(ptr, str); /* Duplicate string str */
 
 if (str == NULL)
 return (NULL);
