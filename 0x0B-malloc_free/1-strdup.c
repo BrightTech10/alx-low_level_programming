@@ -13,12 +13,11 @@
 char *_strdup(char *str)
 {
 int len = strlen(str);
+/* Allocate memory and store address in pointer */
+char *ptr = malloc(sizeof(char) * len + 1);
 
 if (str == NULL)
 return (NULL); 
-
-/* Allocate memory and store address in pointer */
-char *ptr = malloc(sizeof(char) * len + 1);
 
 /* If pointer fails, return NULL*/
 /* This is to avoid segmentation fault */
