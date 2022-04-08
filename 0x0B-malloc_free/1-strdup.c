@@ -14,7 +14,7 @@ char *_strdup(char *str)
 {
 int len; /* Declare int variable for length of string */
 len = strlen(str);
-char *ptr; /* Declare pointer variable */
+char *ptr;
 
 /* Allocate memory and store address in pointer */
 ptr = malloc(sizeof(char) * len);
