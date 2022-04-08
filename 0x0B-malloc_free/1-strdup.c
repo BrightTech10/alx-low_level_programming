@@ -16,7 +16,8 @@ int len; /* Declare int variable for length of string */
 len = strlen(str);
 char *ptr; /* Declare pointer variable */
 
-ptr = malloc(sizeof(char) * len); /* Allocate new memory */
+/* Allocate memory and store address in pointer */
+ptr = malloc(sizeof(char) * len);
 
 /* If pointer fails, return NULL*/
 /* This is to avoid segmentation fault */
