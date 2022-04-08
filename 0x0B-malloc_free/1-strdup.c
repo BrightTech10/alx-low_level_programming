@@ -12,9 +12,6 @@
 
 char *_strdup(char *str)
 {
-if (str == NULL)
-return (NULL);
-
 int len = strlen(str);
 /* Allocate memory and store address in pointer */
 char *ptr = malloc(sizeof(char) * len + 1);
@@ -24,6 +21,11 @@ char *ptr = malloc(sizeof(char) * len + 1);
 if (!ptr)
 {
 printf("Error! Could not allocate space for array\n");
+return (NULL);
+}
+
+if (str == NULL)
+{
 return (NULL);
 }
 
