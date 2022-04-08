@@ -12,6 +12,9 @@
 
 char *_strdup(char *str)
 {
+if (str == NULL)
+return (NULL);
+
 int len = strlen(str);
 /* Allocate memory and store address in pointer */
 char *ptr = malloc(sizeof(char) * len + 1);
@@ -25,9 +28,6 @@ return (NULL);
 }
 
 strcpy(ptr, str); /* Duplicate string str */
-
-if (str == NULL)
-return (NULL);
 
 return (ptr);
 }
