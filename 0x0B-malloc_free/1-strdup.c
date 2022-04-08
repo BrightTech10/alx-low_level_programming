@@ -12,16 +12,20 @@
 
 char *_strdup(char *str)
 {
+
+if (str == NULL)
+return (NULL); 
+
 int len = strlen(str); /* Declare int variable for length of string */
 
 char *ptr;
 
 /* Allocate memory and store address in pointer */
-ptr = malloc(sizeof(char) * len);
+ptr = malloc(sizeof(char) * len + 1);
 
 /* If pointer fails, return NULL*/
 /* This is to avoid segmentation fault */
-if (!str)
+if (!ptr)
 {
 printf("Error! Could not allocate space for array\n");
 return (NULL);
@@ -29,8 +33,6 @@ return (NULL);
 
 strcpy(ptr, str); /* Duplicate string str */
 
-if (str == NULL)
-return (NULL);
 
 return (ptr);
 }
