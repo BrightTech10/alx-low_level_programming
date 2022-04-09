@@ -6,8 +6,14 @@
  * Return: return last digit of integer
 */
 
-
 int print_last_digit(int c)
 {
-return (c % 10);
+if(c < 0)
+{
+c = c * -1;
+}
+int last_digit = c % 10;
+printf("%d", last_digit);
+
+return (last_digit);
 }
