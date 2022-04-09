@@ -7,7 +7,7 @@
 
 int main(void)
 {
-int sum1, sum2, final_sum, i;
+int sum1, sum2, sum3, final_sum, i;
 sum1 = 0;
 sum2 = 0;
 
@@ -24,8 +24,13 @@ if ((i % 5) == 0)
 sum2 += i;
 }
 
+if ((i % 15) == 0)
+{
+sum3 += i;
 }
-final_sum = sum1 + sum2;
+
+}
+final_sum = sum1 + sum2 - sum3;
 printf("%d\n", final_sum);
 
 return (0);
