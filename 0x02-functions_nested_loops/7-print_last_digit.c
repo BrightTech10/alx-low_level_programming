@@ -12,7 +12,8 @@ if(c < 0)
 {
 c = c * -1;
 }
-int last_digit = c % 10;
+int last_digit;
+last_digit = c % 10;
 printf("%d", last_digit);
 
 return (last_digit);
