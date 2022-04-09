@@ -14,6 +14,6 @@ if (c < 0)
 c = c * -1;
 }
 last_digit = c % 10;
-printf("%d\n", last_digit);
+_putchar(last_digit);
 return (last_digit);
 }
