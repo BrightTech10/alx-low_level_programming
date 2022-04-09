@@ -31,7 +31,7 @@ sum3 += i;
 
 }
 final_sum = sum1 + sum2 - sum3;
-printf("%d\n", final_sum);
+printf("%ld\n", final_sum);
 
 return (0);
 }
