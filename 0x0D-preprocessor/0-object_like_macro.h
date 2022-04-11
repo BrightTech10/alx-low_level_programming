@@ -1,4 +1,3 @@
-#ifndef 0-OBJECT_lIKE_MACRO.H
 #define 0-OBJECT_lIKE_MACRO.H
 
 /* SIZE - macro for header file */
