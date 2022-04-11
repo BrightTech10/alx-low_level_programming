@@ -1,1 +1,9 @@
-#define SIZE 1024 /* SIZE - macro for header file */
+#ifndef 0-OBJECT_lIKE_MACRO.H
+#define 0-OBJECT_lIKE_MACRO.H
+
+/* SIZE - macro for header file */
+#define SIZE 1024
+
+#endif
+
+
