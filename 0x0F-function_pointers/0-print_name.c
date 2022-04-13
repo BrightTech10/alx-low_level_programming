@@ -9,6 +9,6 @@
 void print_name(char *name, void (*f)(char *))
 {
 /* call function pointer to print name */
-f(name);
+(*f)(name);
 }
 
