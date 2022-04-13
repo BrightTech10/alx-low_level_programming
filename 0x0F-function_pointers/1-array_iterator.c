@@ -11,20 +11,16 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-/* Function returns nothing if any condition is true */
-if (array == NULL || size <= 0 || action == NULL)
-{
-return;
-}
 
-else
+if (array && action)
 {
-int i; /* Declare i for loop */
+unsigned int i; /* Declare i for loop */
 /* Loop through array; call pointer to function */
 for (i = 0; i < size; i++)
 {
 action(array[i]);
 }
 }
+
 }
 
