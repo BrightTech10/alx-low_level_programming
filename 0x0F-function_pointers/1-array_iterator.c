@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "function_pointers.h"
 
 /**
@@ -12,7 +11,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-/* Function returns nothing based on these conditions */
+/* Function returns nothing if any condition is true */
 if (array == NULL || size <= 0 || action == NULL)
 {
 return;
