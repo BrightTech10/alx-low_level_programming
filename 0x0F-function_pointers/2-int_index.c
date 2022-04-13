@@ -7,7 +7,7 @@
  * @size: size of array
  * @cmp: pointer to a function
  *
- * Return: returns index of matching element
+ * Return: returns index of matching element, -1 otherwise
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -28,10 +28,8 @@ if (cmp(array[i]))
 return (i);
 }
 
+}
 /* If element of array does not match function requirement, */
 /* return -1 */
-if (!(cmp(array[i])))
 return (-1);
 }
-}
-
