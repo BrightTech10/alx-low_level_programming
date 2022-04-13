@@ -16,7 +16,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 if (size <= 0)
 return (-1);
 
-if (array && size != NULL && cmp)
+if (array && cmp)
 {
 int i; /* Declare i for looping */
 /* Loop through array; call pointer to function */
@@ -28,7 +28,7 @@ if (cmp(array[i]))
 return (i);
 }
 
-/* If element of array does not matche function requirement, */
+/* If element of array does not match function requirement, */
 /* return -1 */
 if (!(cmp(array[i])))
 return (-1);
