@@ -28,6 +28,10 @@ if (cmp(array[i]))
 return (i);
 }
 
+/* If element of array does not match function requirement, */
+/* return -1 */
+if (!(cmp(array[i])))
+return (-1);
+}
+}
 
-}
-}
