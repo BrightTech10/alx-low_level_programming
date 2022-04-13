@@ -13,7 +13,17 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+/* If value of my_dog is NULL, print NULL*/
+if (d == NULL)
+{
+printf("");
+}
+
+else
+{
 d->name = name; /* Initialize name of dog */
 d->age = age; /* Initialize age of dog */
 d->owner = owner; /* Initialize owner of dog */
+}
+
 }
