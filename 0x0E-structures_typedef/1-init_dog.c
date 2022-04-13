@@ -13,10 +13,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-/* If value of my_dog is NULL, print NULL*/
+/* If value of my_dog is NULL, print nothing */
 if (d == NULL)
 {
-printf("");
+return;
 }
 
 else
