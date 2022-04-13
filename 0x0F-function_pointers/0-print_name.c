@@ -8,21 +8,13 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-if (f == NULL)
+if (name && f)
 {
-return;
-}
-
-else if (name == NULL)
-{
-return;
+f(name);
 }
 
 else
-{
-/* call function pointer to print name */
-f(name);
-}
+return;
 
 }
 
