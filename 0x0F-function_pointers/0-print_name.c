@@ -13,8 +13,5 @@ if (name && f)
 f(name);
 }
 
-else
-return;
-
 }
 
