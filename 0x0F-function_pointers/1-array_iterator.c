@@ -12,16 +12,10 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 
-/* If function pointer is not NULL */
-/* Loop through and call function pointer */
-if (action && array)
-{
 int i; /* Declare i for loop */
 for (i = 0; i < size; i++)
 {
 action(array[i]);
-}
-
 }
 
 }
