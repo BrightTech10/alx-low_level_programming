@@ -8,7 +8,11 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+if (f && name)
+{
 /* call function pointer to print name */
 f(name);
+}
+
 }
 
