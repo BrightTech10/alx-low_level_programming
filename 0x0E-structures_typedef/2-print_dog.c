@@ -14,11 +14,11 @@ if (d == NULL)
 return;
 }
 
-if (d->name == NULL)
+else if (d->name == NULL && d->owner == NULL)
 {
 printf("Name: (nil)\n");
 printf("%f\n", d->age);
-printf("%s\n", d->owner);
+printf("Owner: (nil)\n");
 }
 
 else
