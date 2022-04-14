@@ -17,7 +17,7 @@ va_start(arg, n); /* Start iterating arguments */
 /* Loop through arguments and print strings */
 for (i = 0; i < n; i++)
 {
-str = va_arg(arg, *char);
+str = va_arg(arg, char *);
 /* If string is not NULL print string */
 /* else print (nil) */
 if (str != NULL)
