@@ -12,7 +12,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 va_list args; /* Variable to iterate arguments */
-int i, sum; /* Declare i and sum; i for looping */
+unsigned int i, sum; /* Declare i and sum; i for looping */
 sum = 0; /* Initialize sum to 0 */
 
 if (n == 0)
