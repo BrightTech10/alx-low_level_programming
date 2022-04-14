@@ -12,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 va_list arg; /* Variable to iterate arguments */
 /* Declare i and str; i for looping, str is string */
 unsigned int i,
-char str;
+char *str;
 va_start(arg, n); /* Start iterating arguments */
 /* Loop through arguments and print strings */
 for (i = 0; i < n; i++)
