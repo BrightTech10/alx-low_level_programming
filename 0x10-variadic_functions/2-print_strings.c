@@ -11,7 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list arg; /* Variable to iterate arguments */
 /* Declare i and str; i for looping, str is string */
-unsigned int i,
+unsigned int i;
 char *str;
 va_start(arg, n); /* Start iterating arguments */
 /* Loop through arguments and print strings */
@@ -36,4 +36,11 @@ printf("\n");
 va_end(arg);
 /* If is NULL don't print */
 return;
+}
+
+
+int main(void)
+{
+    print_strings(", ", 2, "Jay", "Django");
+    return (0);
 }
