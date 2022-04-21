@@ -24,7 +24,7 @@ if (temp->str == NULL)
 printf("[0] (nil)\n");
 }
 else
-printf("[%lu] %s\n", (temp->len), (temp->str));
+printf("[%d] %s\n", (temp->len), (temp->str));
 
 temp = temp->next;
 count++;
