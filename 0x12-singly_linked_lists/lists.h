@@ -1,5 +1,5 @@
-#ifndef _LISTS_H_
-#define _LISTS_H_
+#ifndef _0_PRINT_LIST_C_
+#define _0_PRINT_LIST_C_
 
 int _putchar(char c);
 size_t print_list(const list_t *h);
