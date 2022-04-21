@@ -1,5 +1,5 @@
-#ifndef _0_PRINT_LIST_C_
-#define _0_PRINT_LIST_C_
+#ifndef LIST_H
+#define LIST_H
 
 /**
  * struct list_s - singly linked list
