@@ -21,7 +21,7 @@ if (h->str == NULL)
 {
 printf("[0] (nil)\n");
 }
-else /* if string != empty, print list elements */
+else
 printf("[%u] %s\n", h->len, h->str);
 
 /* move to next node */
