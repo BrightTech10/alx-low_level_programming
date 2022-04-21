@@ -11,7 +11,7 @@
 
 size_t print_list(const list_t *h)
 {
-size_t int count;
+size_t count; /* Declare count for number of nodes */
 
 count = 0;
 while (h != NULL)
