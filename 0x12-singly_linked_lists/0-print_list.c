@@ -1,8 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
 
 /**
  * print_list - prints all elements in a list
@@ -13,19 +9,22 @@
 
 size_t print_list(const list_t *h)
 {
-size_t count; /* Declare count for number of nodes */
+/* Declare count for number of nodes */
+size_t count;
 
-count = 0; /* initialize count to 0 */
+count = 0;
 /* Loop through list while list is not empty */
 while (h != NULL)
 {
-if (h->str == NULL) /* condition for empty string */
+/* condition for empty string */
+if (h->str == NULL)
 {
 printf("[0] (nil)\n");
 }
 else /* if string != empty, print list elements */
 printf("[%u] %s\n", h->len, h->str);
 
+/* move to next node */
 h = h->next;
 count++;
 }
