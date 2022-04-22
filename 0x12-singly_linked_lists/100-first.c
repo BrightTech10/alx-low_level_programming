@@ -1,14 +1,11 @@
-#include "lists.h"
+#include <stdio.h>
 
 /**
- * print_before_main - executes before main function
+ * first_one - prints first before main
  */
-
-/* Apply constructor attribute so that */
-/* print_before_main() is exectued before main() */
-__attribute__ ((constructor))
-void print_before_main(void)
+__attribute__ ((constructor))/*this makes this funct. perform before main*/
+void first_one(void)
 {
-printf("You're beat! and yet, you must allow,\n");
-printf("I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
