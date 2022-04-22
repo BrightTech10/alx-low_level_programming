@@ -4,7 +4,7 @@
  * add_node - add new node at the beginnning of a list
  * @head: double pointer to head node
  * @str: string variable
- * Return: returns number of nodes
+ * Return: returns address of new nodes
  */
 
 list_t *add_node(list_t **head, const char *str)
@@ -17,7 +17,7 @@ while (str[len] != '\0')
 len++;
 }
 
-/* and allocate memory to new node */
+/* Allocate memory to new node */
 /* Return NULL is if memory allocation fails */
 newNode = malloc(sizeof(list_t));
 if (newNode == NULL)
