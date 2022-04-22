@@ -15,12 +15,12 @@ while (str[len] != '\0')
 {
 len++;
 }
-
-newNode = malloc(sizeof(list_t));/* allocate memory */
+/* allocate memory */
+newNode = malloc(sizeof(list_t));
 if (newNode == NULL)
 return (NULL);
-
-newNode->str = strdup(str);/* Duplicate string */
+/* Duplicate string */
+newNode->str = strdup(str);
 newNode->len = len;
 newNode->next = NULL;
 
