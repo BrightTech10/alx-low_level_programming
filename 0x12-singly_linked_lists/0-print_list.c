@@ -3,15 +3,13 @@
 /**
  * print_list - prints all elements in a list
  * @h: pointer to list
- * Return: returns number of nodes
+ * Return: number of elements printed
  */
 
 size_t print_list(const list_t *h)
 {
-/* Declare count for number of nodes */
-size_t count;
-
-count = 0;
+/*declare variables to be used in loop and node*/
+size_t count = 0;
 /* Loop through list while list is not empty */
 while (h != NULL)
 {
@@ -20,12 +18,10 @@ if (h->str == NULL)
 printf("[0] (nil)\n");
 else
 printf("[%u] %s\n", h->len, h->str);
-
-/* move to next node */
+/* Point to address of the next struct*/
 h = h->next;
 count++;
 }
-/* return number of nodes */
+
 return (count);
 }
-
