@@ -9,21 +9,28 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-/* first duplicate string variable */
-char *dup;
-dup = strdup(str);
+/* Declare variable to get length of str */
+unsigned int len;
+len = 0;
+while(str[len] != '\0')
+{
+len++;
+}
 
 /* Create new node to store new values; */
-/* Allocate memory to new node */
+/* and allocate memory to new node */
+/* Return NULL is if memory allocation fails */
 list_t *newNode;
 newNode = malloc(sizeof(list_t));
 if(newNode == NULL)
-printf("SegError!\n");
+return (NULL);
 
-/* Assign new values to new node */
-newNode->str = dup;
-newNode->len = strlen(dup);
-/* newNode is added at the beginning */
+/* Duplicate string and */
+/* Assign values to new node */
+newNode->str = strdup(str);
+newNode->len = len;
+
+/* add newNode at the beginning of list */
 newNode->next = *head;
 /* head now points to newNode */
 *head = newNode;
