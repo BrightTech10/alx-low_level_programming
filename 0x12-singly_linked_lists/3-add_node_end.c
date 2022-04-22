@@ -20,9 +20,10 @@ newNode = malloc(sizeof(list_t));/* allocate memory */
 if (newNode == NULL)
 return (NULL);
 
-newNode->str = strdup(str);
+newNode->str = strdup(str);/* Duplicate string */
 newNode->len = len;
 newNode->next = NULL;
+
 if (*head == NULL)
 *head = newNode;
 else
@@ -34,5 +35,5 @@ temp = temp->next;
 }
 temp->next = newNode;
 }
-return (temp);
+return (*head);
 }
