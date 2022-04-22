@@ -4,12 +4,12 @@
  * add_node_end - add new node at the end of a list
  * @head: double pointer to head node
  * @str: string variable
- * Return: returns number of nodes
+ * Return: returns address of new node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *newNode, *temp;
-unsigned int len;/* Declare variable to get length of str */
+unsigned int len;/* variable to get length of str */
 len = 0;
 while (str[len] != '\0')
 {
