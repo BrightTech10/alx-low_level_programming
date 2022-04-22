@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * print_len - number of elements in a list
+ * list_len - number of elements in a list
  * @h: pointer to list
- *
  * Return: returns number of elements
  */
 
@@ -16,13 +15,6 @@ count = 0;
 /* Loop through list while list is not empty */
 while (h != NULL)
 {
-/* condition for empty string */
-if (h->str == NULL)
-{
-printf("[0] (nil)\n");
-}
-
-/* move to next node */
 h = h->next;
 count++;
 }
