@@ -12,7 +12,7 @@ list_t *add_node(list_t **head, const char *str)
 /* Declare variable to get length of str */
 unsigned int len;
 len = 0;
-while(str[len] != '\0')
+while (str[len] != '\0')
 {
 len++;
 }
@@ -22,7 +22,7 @@ len++;
 /* Return NULL is if memory allocation fails */
 list_t *newNode;
 newNode = malloc(sizeof(list_t));
-if(newNode == NULL)
+if (newNode == NULL)
 return (NULL);
 
 /* Duplicate string and */
