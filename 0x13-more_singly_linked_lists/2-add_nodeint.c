@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -16,7 +15,6 @@ listint_t *newNode;
 newNode = malloc(sizeof(listint_t));
 if (newNode == NULL)
 {
-free(newNode);
 return (NULL);
 }
 
