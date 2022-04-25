@@ -18,10 +18,8 @@ if (newNode == NULL)
 return (1);
 
 newNode->n = n;
-
 newNode->next = *head;
 *head = newNode;
-
 
 return (*head);
 }
