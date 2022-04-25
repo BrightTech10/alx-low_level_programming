@@ -18,14 +18,10 @@ if (newNode == NULL)
 return (1);
 
 newNode->n = n;
-if (*head == NULL)
-*head = newNode;
 
 newNode->next = *head;
 *head = newNode;
 
-if (*head == NULL)
-return (NULL);
 
 return (*head);
 }
