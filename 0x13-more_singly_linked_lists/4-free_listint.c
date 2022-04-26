@@ -14,7 +14,7 @@ newNode = head;
 while (newNode != NULL)
 {
 newNode = newNode->next;
-}
 free(oldNode);
 oldNode = newNode;
+}
 }
