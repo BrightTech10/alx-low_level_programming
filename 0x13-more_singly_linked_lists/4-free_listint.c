@@ -13,9 +13,13 @@ temp = head;
 if (head == NULL)
 return (NULL);
 
+else
+{
 while (temp->next != NULL)
 {
 temp = temp->next;
 }
 free(temp);
+}
+
 }
