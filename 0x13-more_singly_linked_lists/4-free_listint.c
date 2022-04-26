@@ -7,19 +7,14 @@
 
 void free_listint(listint_t *head)
 {
-listint_t *temp;
-temp = head;
+listint_t *oldNode, *newNode;
+oldNode = head;
+newNode = head;
 
-if (head == NULL)
-return (NULL);
-
-else
+while (newNode != NULL)
 {
-while (temp->next != NULL)
-{
-temp = temp->next;
+newNode = newNode->next;
 }
-
-}
-free(temp);
+free(oldNode);
+oldNode = newNode;
 }
