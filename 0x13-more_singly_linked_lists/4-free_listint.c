@@ -13,9 +13,8 @@ temp = head;
 while (temp->next != NULL)
 {
 temp = temp->next;
-
-free(head);
-head = temp;
 }
+head = temp;
+free(head);
 }
 
