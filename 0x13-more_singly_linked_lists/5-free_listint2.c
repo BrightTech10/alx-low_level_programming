@@ -12,7 +12,7 @@ listint_t *oldNode, *newNode;
 oldNode = *head;
 newNode = *head;
 
-if (*head != NULL)
+if (head != NULL)
 {
 while (newNode != NULL)
 {
@@ -20,6 +20,6 @@ newNode = newNode->next;
 free(oldNode);
 oldNode = newNode;
 }
-}
 *head = NULL;
+}
 }
