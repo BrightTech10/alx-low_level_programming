@@ -19,7 +19,7 @@ while (temp->next != NULL)
 {
 temp = temp->next;
 }
-free(temp);
-}
 
+}
+free(temp);
 }
