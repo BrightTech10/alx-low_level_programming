@@ -20,6 +20,6 @@ newNode = newNode->next;
 free(oldNode);
 oldNode = newNode;
 }
-*head = NULL;
 }
+*head = NULL;
 }
