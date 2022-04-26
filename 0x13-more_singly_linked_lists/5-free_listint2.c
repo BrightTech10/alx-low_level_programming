@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - frees list
+ * free_listint2 - frees list
  * @head: pointer to the first node
  *
  * Description: the function also sets head to NULL
@@ -17,6 +17,6 @@ while (newNode != NULL)
 newNode = newNode->next;
 free(oldNode);
 oldNode = newNode;
-}
 *head = NULL;
+}
 }
