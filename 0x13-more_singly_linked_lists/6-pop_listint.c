@@ -11,12 +11,13 @@ listint_t *temp;
 int value;
 
 temp = *head;
-value = temp->n;
 
 if (temp == NULL)
 return (0);
 
+value = temp->n;
 temp = temp->next;
+
 free(*head);
 *head = temp;
 
