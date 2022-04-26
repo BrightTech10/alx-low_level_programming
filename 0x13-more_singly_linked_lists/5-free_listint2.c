@@ -2,18 +2,18 @@
 
 /**
  * free_listint2 - frees list
- * @head: pointer to the first node
+ * @head: double pointer to the first node
  *
  * Description: the function also sets head to NULL
  */
 void free_listint2(listint_t **head)
 {
 listint_t *oldNode, *newNode;
-oldNode = *head;
-newNode = *head;
 
 if (head != NULL)
 {
+oldNode = *head;
+newNode = *head;
 while (newNode != NULL)
 {
 newNode = newNode->next;
