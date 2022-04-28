@@ -16,7 +16,7 @@ len = strlen(b);
 decVal = 1;
 sum = 0;
 
-if (b == NULL)
+if (!b)
 return (0);
 
 else
