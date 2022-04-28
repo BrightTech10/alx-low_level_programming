@@ -23,7 +23,7 @@ else
 {
 for (i = (len - 1); i >= 0; i--)
 {
-if (!(b[i] == '0' || b[i] == '1'))
+if ((b[i] < '0') || (b[i] > '9'))
 return (0);
 
 if (b[i] == '1')
@@ -32,7 +32,6 @@ sum += decVal;
 decVal *= 2;
 }
 }
-
 
 return (sum);
 }
