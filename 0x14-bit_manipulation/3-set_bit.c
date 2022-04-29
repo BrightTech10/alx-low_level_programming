@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * get_bit - returns value of a bit at an index
+ * set_bit - sets value of a bit to 1 at an index
  * @n: decimal number
  * @index: index
- * Return: return value of bit at index
+ * Return: returns 1 if successful
  * else it returns -1 in case of an error
  */
 int set_bit(unsigned long int *n, unsigned int index)
@@ -13,5 +13,5 @@ if (index >= (sizeof(n) * 8))
 return (-1);
 
 *n = *n | (1 << index);
-return (*n);
+return (1);
 }
