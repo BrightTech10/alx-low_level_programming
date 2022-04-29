@@ -10,20 +10,8 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-unsigned int i, j;
-int size = (sizeof(n) * 8);
-int binary[size];
+if (index >= (sizeof(n) * 8))
+return (-1);
 
-for (i = 0; n != 0; i++)
-{
-binary[i] = n % 2;
-n = n / 2;
-}
-
-for (j = i - 1; j >= 0; j--)
-{
-if (j == index)
-return (binary[j]);
-}
-
+return ((n >> index) & 1);
 }
