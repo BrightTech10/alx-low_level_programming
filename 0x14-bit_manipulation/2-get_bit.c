@@ -24,9 +24,6 @@ for (j = i - 1; j >= 0; j--)
 {
 if (j == index)
 return (binary[j]);
-
-else if (index < 0)
-return (-1);
 }
 
 }
