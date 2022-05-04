@@ -18,14 +18,17 @@ int create_file(const char *filename, char *text_content)
 	/* Create new file if it doesn't exist */
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
-		return (0);
+		return (-1);
 
+	if (text_content)
+	{
 	/* To get length of text_content */
 	while (text_content[length] != '\0')
 		length++;
 
 	/* Write text_content to the file pointed to by fd */
 	write(fd, text_content, length);
+	}
 
 	close(fd);
 
