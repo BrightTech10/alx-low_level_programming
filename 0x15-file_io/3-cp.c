@@ -1,9 +1,13 @@
 #include "main.h"
-
 /**
  * _cp - to copy from one file to the other
  * @file_from: pointer to source file
  * @file_to: pointer to destination file
+ *
+ * Description: If argument count is incorrect, exit with code 97
+ * If file-from does not exist or can't be read, exit with code 98
+ * If file_to can't be created or written to, exit with code 99
+ * If file descriptor can't be closed, exit with code 100
  *
  * Return: return 1 if successful
  */
@@ -21,10 +25,7 @@ int _cp(char *file_from, char *file_to)
 		exit(98);
 	}
 
-	/* Create destination file and set to writeonly */
-	/* If file already exists, truncate it */
-	/* Then set file permission to -rw-rw-r */
-	fd_to = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
