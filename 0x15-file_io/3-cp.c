@@ -10,9 +10,10 @@
 int _cp(char *file_from, char *file_to)
 {
 	int fd_from, fd_to, closeto, closefrom;
-	char *buff[1024];
+	char buff[1024];
 	ssize_t numwrite, numread = 1024;
 
+	/* Open destination file and set to readonly */
 	fd_from = open(file_from, O_RDONLY);
 	if (fd_from == -1)
 	{
@@ -20,6 +21,9 @@ int _cp(char *file_from, char *file_to)
 		exit(98);
 	}
 
+	/* Create destination file and set to writeonly */
+	/* If file already exists, truncate it */
+	/* Then set file permission to -rw-rw-r */
 	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
@@ -71,7 +75,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
