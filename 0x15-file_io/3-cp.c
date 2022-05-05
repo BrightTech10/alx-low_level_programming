@@ -24,7 +24,7 @@ int _cp(char *file_from, char *file_to)
 	/* Create destination file and set to writeonly */
 	/* If file already exists, truncate it */
 	/* Then set file permission to -rw-rw-r */
-	fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fd_to = open(file_to, O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fd_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
@@ -50,14 +50,14 @@ int _cp(char *file_from, char *file_to)
 	closefrom = close(fd_from);
 	if (closefrom == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd_from %d\n", fd_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 		exit(100);
 	}
 
 	closeto = close(fd_to);
 	if (closeto == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd_to %d\n", fd_to);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
 
