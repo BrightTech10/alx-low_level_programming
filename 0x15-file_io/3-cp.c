@@ -36,7 +36,7 @@ int _cp(char *file_from, char *file_to)
 		numread = read(fd_from, buff, 1024);
 		if (numread == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", file_from);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 			exit(98);
 		}
 		numwrite = write(fd_to, buff, numread);
