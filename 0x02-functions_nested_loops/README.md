@@ -1,4 +1,4 @@
-# C - PROGRAMMING: FUCNTIONS AND NESTED LOOPS
+# C - PROGRAMMING: FUNCTIONS AND NESTED LOOPS
 
 ## OBJECTIVES
 - Understanding nested loops and how to use them
