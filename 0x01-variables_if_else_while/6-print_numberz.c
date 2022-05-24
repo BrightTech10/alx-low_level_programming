@@ -2,17 +2,21 @@
 #include <stdlib.h>
 
 /**
-* main - Entry point
-* Return: Always 0 (Success)
-*/
+ * main -  prints all single digit numbers
+ * of base 10 starting from 0
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int x = '0';
-while (x <= '9')
-{
-putchar(x);
-x++;
-}
-putchar('\n');
-return (0);
+	int x;
+
+	x = '0';
+	while (x <= '9')
+	{
+		putchar(x);
+		x++;
+	}
+	putchar('\n');
+	return (0);
 }

@@ -2,34 +2,36 @@
 #include <stdlib.h>
 
 /**
-* main - Entry point
-* Return: Always 0 (Success)
-*/
+ * main - prints all possible different
+ * combinations of two digits
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int a = ',';
-int b = ' ';
-int x = 48;
-int y;
-while (x < 58)
-{
-y = x + 1;
-while (y < 58)
-{
-putchar(x);
-putchar(y);
-if (x == 56 && y == 57)
-{
-break;
-}
-putchar(a);
-putchar(b);
+	int a = ',';
+	int b = ' ';
+	int y, x;
 
-y++;
-}
-x++;
-}
+	x = 48;
+	while (x < 58)
+	{
+		y = x + 1;
+		while (y < 58)
+		{
+			putchar(x);
+			putchar(y);
+			if (x == 56 && y == 57)
+			{
+				break;
+			}
+			putchar(a);
+			putchar(b);
 
-putchar('\n');
-return (0);
+			y++;
+		}
+		x++;
+	}
+
+	putchar('\n');
+	return (0);
 }

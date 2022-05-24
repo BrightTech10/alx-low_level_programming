@@ -2,22 +2,24 @@
 #include <stdlib.h>
 
 /**
-* main - Entry point
-* Return: Always 0 (Success)
-*/
+ * main - prints the alphabet in lowercase
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int x = 'a';
-while (x <= 'z')
-{
-if (x == 'q' || x == 'e')
-{
-x++;
-continue;
-}
-putchar(x);
-x++;
-}
-putchar('\n');
-return (0);
+	int x;
+
+	x = 'a';
+	while (x <= 'z')
+	{
+		if (x == 'q' || x == 'e')
+		{
+			x++;
+			continue;
+		}
+		putchar(x);
+		x++;
+	}
+	putchar('\n');
+	return (0);
 }
