@@ -8,18 +8,18 @@
  */
 int main(void)
 {
-	int i, j, next, count;
+	long int i, j, next, count;
 
 	i = 1;
 	j = 2;
 	next = 3;
-	printf("%d, %d, ", i, j);
+	printf("%lu, %lu, ", i, j);
 
-	count = 0;
-	while (count < 50)
+	count = 3;
+	while (count <= 50)
 	{
-		printf("%d", next);
-		if (count == 49)
+		printf("%lu", next);
+		if (count == 50)
 			break;
 		printf(", ");
 		i = j;
