@@ -1,4 +1,3 @@
-/* main.h */
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -33,6 +32,9 @@ void jack_bauer(void);
 
 /* Prints the 9 times table, starting with 0 */
 void times_table(void);
+
+/* Prints the n times table, starting with 0 */
+void print_times_table(int n);
 
 /* Adds two integers and return the result */
 int add(int, int);
