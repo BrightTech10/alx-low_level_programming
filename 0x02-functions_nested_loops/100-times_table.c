@@ -5,16 +5,13 @@
  */
 void print_times_table(int n)
 {
-	int row, col, val, div, rem, tens, tens2, unit, unit2;
+	int row, col, val;
 
 	if (n > 15 || n < 0)
 		return;
-
-	row = 0;
-	while (row <= n)
+	for (row = 0; row <= n; row++)
 	{
-		col = 0;
-		while (col <= n)
+		for (col = 0; col <= n; col++)
 		{
 			val = row * col; /* val of each table item */
 			if (val < 10)
@@ -25,43 +22,30 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 				_putchar(val + '0');
-				if (col == n)
-					break;
-				_putchar(',');
-				_putchar(' ');
 			}
-			else if (val < 100) /* for two-digit numbers */
+			else
 			{
-				tens = val / 10;
-				unit = val % 10;
-				if (col == 1)
-					_putchar(' ');
-				if (col != 1)
-					_putchar(' ');
-				_putchar(tens + '0');
-				_putchar(unit + '0');
-				if (col == n)
-					break;
-				_putchar(',');
-				_putchar(' ');
+				if (val < 100)
+				{
+					if (col == 1)
+						_putchar(' ');
+					if (col != 1)
+						_putchar(' ');
+					_putchar((val / 10) + '0');
+					_putchar((val % 10) + '0');
+				}
+				else
+				{
+					_putchar(((val / 10) / 10) + '0');
+					_putchar(((val / 10) % 10) + '0');
+					_putchar((val % 10) + '0');
+				}
 			}
-			else /* for three-digit numbers and above */
-			{
-				div = val / 10;
-				tens2 = div / 10;
-				rem = div % 10;
-				unit2 = val % 10;
-				_putchar(tens2 + '0');
-				_putchar(rem + '0');
-				_putchar(unit2 + '0');
-				if (col == n)
-					break;
-				_putchar(',');
-				_putchar(' ');
-			}
-			col++;
+			if (col == n)
+				break;
+			_putchar(',');
+			_putchar(' ');
 		}
 		_putchar('\n');
-		row++;
 	}
 }
