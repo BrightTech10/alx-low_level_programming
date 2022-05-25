@@ -6,6 +6,10 @@
 /*  */
 int _putchar(char c);
 
+void double_space(void);
+
+void comma_space(void);
+
 /* Declare the print_alphabet function */
 void print_alphabet(void);
 

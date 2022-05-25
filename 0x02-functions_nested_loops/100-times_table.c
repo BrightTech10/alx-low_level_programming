@@ -18,8 +18,7 @@ void print_times_table(int n)
 			{
 				if (col != 0)
 				{
-					_putchar(' ');
-					_putchar(' ');
+					double_space();
 				}
 				_putchar(val + '0');
 			}
@@ -32,20 +31,36 @@ void print_times_table(int n)
 					if (col != 1)
 						_putchar(' ');
 					_putchar((val / 10) + '0');
-					_putchar((val % 10) + '0');
 				}
 				else
 				{
 					_putchar(((val / 10) / 10) + '0');
 					_putchar(((val / 10) % 10) + '0');
-					_putchar((val % 10) + '0');
 				}
+				_putchar((val % 10) + '0');
 			}
 			if (col == n)
 				break;
-			_putchar(',');
-			_putchar(' ');
+			comma_space();
 		}
 		_putchar('\n');
 	}
+}
+
+/**
+ * double_space - add double space
+ */
+void double_space(void)
+{
+	_putchar(' ');
+	_putchar(' ');
+}
+
+/**
+ * comma_space - add comma and space
+ */
+void comma_space(void)
+{
+	_putchar(',');
+	_putchar(' ');
 }
