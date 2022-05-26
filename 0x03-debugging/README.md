@@ -1,1 +1,3 @@
-Debugging for c programming tasks
+# C PROGRAMMING TASKS
+
+## DEBUGGING
