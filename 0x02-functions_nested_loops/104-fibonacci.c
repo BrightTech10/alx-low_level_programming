@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned long long int i, j, next, count;
+	unsigned long int i, j, next, count;
 
 	i = 1;
 	j = 2;
@@ -18,7 +18,7 @@ int main(void)
 	count = 3;
 	while (count <= 98)
 	{
-		printf("%llu", next);
+		printf("%lu", next);
 		if (count == 98)
 			break;
 		printf(", ");
