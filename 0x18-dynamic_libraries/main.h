@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /*Prototypes*/
 int _putchar(char c);
@@ -31,7 +32,7 @@ char *_strstr(char *haystack, char *needle);
 int add(int, int);
 int sub(int, int);
 int mul(int, int);
-int div(int, int);
+int _div(int, int);
 int mod(int, int);
 
 #endif /* _MAIN_H_ */
