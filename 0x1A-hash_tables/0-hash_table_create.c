@@ -15,10 +15,13 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!hash_table)
 		return (NULL);
 
-	hash_table->size = size;
-	hash_table->array = malloc(sizeof(hash_node_t *) * hash_table->size);
+	/* allocate memory to each slot in the hash table */
+	/* each slot is a pointer. Therefore (size) number of pointers are created */
+	hash_table->array = malloc(sizeof(hash_node_t *) * size);
 	if (!hash_table->array)
 		return (NULL);
+
+	hash_table->size = size;
 
 	/* initialize all slots to NULL */
 	for (i = 0; i < size; i++)
