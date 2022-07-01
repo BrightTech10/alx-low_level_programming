@@ -36,11 +36,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			strcpy(slot_entry->value, value);
 			return (1);
 		}
-		/* add new element at beginning */
-		new = hash_table_node(key, value);
-		new->next = slot_entry;
-		slot_entry->next = NULL;
+		slot_entry = slot_entry->next;
 	}
+		new = malloc(sizeof(hash_node_t));
+		if (!new)
+			return (0);
+		new = hash_table_node(key, value);
+		new->next = ht->array[index]; /* add new element at beginning */
+		ht->array[index] = new;
 
 	return (1);
 }
