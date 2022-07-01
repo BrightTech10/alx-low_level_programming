@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - adds or update an element to the hash table
+ * hash_table_set - adds or updates an element to the hash table
  *
  * @ht : pointer to hash table
  * @key: key - cannot be empty
@@ -11,7 +11,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *slot_entry, *prev;
+	hash_node_t *slot_entry, *new;
 
 	if (ht == NULL || key == NULL)
 		return (0);
@@ -36,10 +36,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			strcpy(slot_entry->value, value);
 			return (1);
 		}
-		prev = slot_entry;
-		slot_entry = prev->next;
+		/* add new element at beginning */
+		new = hash_table_node(key, value);
+		new->next = slot_entry;
+		slot_entry->next = NULL;
 	}
-	prev->next = hash_table_node(key, value);
+
 	return (1);
 }
 
