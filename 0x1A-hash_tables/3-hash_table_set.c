@@ -1,17 +1,20 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - adds an element to the hash table
+ * hash_table_set - adds or update an element to the hash table
  *
  * @ht : pointer to hash table
- * @key: key
- * @value: key value
+ * @key: key - cannot be empty
+ * @value: value assoiciated with key
  * Return: returns 1 if successful, otherwise 0
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *slot_entry, *prev;
+
+	if (ht == NULL || key == '\0' || value == NULL)
+		return (0);
 
 	/* get the index */
 	index = key_index((const unsigned char *)key, ht->size);
